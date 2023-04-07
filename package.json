@@ -1,0 +1,45 @@
+{
+  "name": "devcontainer-nodejs-template",
+  "version": "1.0.0",
+  "author": {
+    "name": "위정훈 (gitgitWi)",
+    "email": "rs1kflvx@duck.com"
+  },
+  "readme": "https://github.com/gitgitWi/devcontainer-nodejs-template/blob/main/README.md",
+  "qna": "https://github.com/gitgitWi/devcontainer-nodejs-template/discussions",
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "pnpm-workspaces",
+    "devcontainer"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@7.30.1",
+  "scripts": {
+    "format": "prettier --write ./ --config .prettierrc",
+    "clean": "turbo run clean && rm -rf node_modules && rm -rf .pnpm-store",
+    "clean:build": "turbo run clean:build",
+    "preinstall": "npx only-allow pnpm",
+    "prebuild": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.6",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "turbo": "^1.8.5"
+  }
+}
