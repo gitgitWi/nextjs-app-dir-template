@@ -20,12 +20,13 @@
   },
   "scripts": {
     "dev": "next dev",
+    "build-and-start": "next build && next start",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write ./ --config .prettierrc",
-    "clean": "turbo run clean && rm -rf node_modules && rm -rf .pnpm-store",
-    "clean:build": "turbo run clean:build",
+    "clean": "clean:build && rm -rf node_modules",
+    "clean:build": "rm -rf .next",
     "preinstall": "corepack enable && corepack prepare pnpm@latest --activate && npx only-allow pnpm",
     "prebuild": "npx only-allow pnpm"
   },
