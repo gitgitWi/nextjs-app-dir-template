@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react';
 
+import { ReactQueryClientProvider } from '@features/providers/query-client-provider';
 import './global.scss';
 
 export const metadata = {
@@ -11,7 +12,10 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="ko">
       <head></head>
-      <body>{children}</body>
+
+      <body>
+        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+      </body>
     </html>
   );
 }
