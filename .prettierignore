@@ -13,6 +13,5 @@ next-env.d.ts
 .vscode
 
 pnpm-lock.yaml
-pnpm-workspace.yaml
 
 .prettierrc
