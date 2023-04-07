@@ -11,7 +11,7 @@
   "javascript.inlayHints.parameterTypes.enabled": true,
   "typescript.inlayHints.parameterNames.enabled": "literals",
   "typescript.inlayHints.parameterTypes.enabled": true,
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
   "[dotenv]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
