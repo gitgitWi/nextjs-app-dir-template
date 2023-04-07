@@ -15,10 +15,9 @@
         "wix.vscode-import-cost",
         "christian-kohler.path-intellisense",
         "ms-edgedevtools.vscode-edge-devtools",
-        "mutantdino.resourcemonitor",
         "WakaTime.vscode-wakatime"
       ]
     }
   },
-  "postStartCommand": "npm i -g npm pnpm && pnpm install"
+  "postStartCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install"
 }

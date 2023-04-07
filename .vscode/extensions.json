@@ -12,6 +12,9 @@
     "wallabyjs.console-ninja",
     "naumovs.color-highlight",
     "adpyke.codesnap",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "bradlc.vscode-tailwindcss",
+    "heybourn.headwind",
+    "mutantdino.resourcemonitor",
   ]
 }
