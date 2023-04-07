@@ -1,4 +1,4 @@
-# Let's create Awesome Project
+# Let's create Awesome Next.js Project
 
 > _created with [nextjs-app-dir-template](https://github.com/gitgitWi/nextjs-app-dir-template)_
 
