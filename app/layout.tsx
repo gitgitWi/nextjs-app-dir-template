@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
 
-import { ReactQueryClientProvider } from '@features/providers/query-client-provider';
+import { ReactQueryClientProvider } from '@features/providers/react-query';
 import './global.scss';
 
 export const metadata = {

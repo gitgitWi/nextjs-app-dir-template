@@ -34,6 +34,7 @@
     "typescript-plugin-css-modules": "^5.0.0"
   },
   "dependencies": {
+    "@lukemorales/query-key-factory": "^1.2.0",
     "@tanstack/react-query": "^4.28.0",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.33",
