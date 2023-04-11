@@ -24,5 +24,8 @@
     "gitlens.codeLens.scopes": [
       "document"
     ],
-  }
+  },
+  "cSpell.words": [
+    "lukemorales"
+  ]
 }
