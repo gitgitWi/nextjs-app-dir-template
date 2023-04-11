@@ -1,8 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
+import { queryKeyStore } from '@features/providers/react-query';
 
-export const useQueryDummyData = (productId?: string) => {
+export const useQueryDummyData = (productId = '') => {
   return useQuery({
-    queryKey: [`query-dummy-data`],
+    queryKey: queryKeyStore.dummy.products(productId).queryKey,
     queryFn: () => fetchDummyProducts(productId),
   });
 };
